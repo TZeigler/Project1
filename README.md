@@ -2,8 +2,8 @@
 
 This project is to be used as a snapshot of my abilities and understanding of SQL
 The first part of the display is “Data Engineering” or “Data Modeling.” It is important to know the tables within the database and the information of which the tables consist of. 
-Once I identified the tables and its information, I was able to create the schema or relational diagram to link the tables.
-There is one table within the diagram that did not have a column with a common name to any other table. Upon review there were two tables with the same values. I duplicated the column with the matching values and gave it the same name to create the relationship in the schema.
+Once I identified the tables and its information, I was able to create the schema or relational diagram to link the tables. Each table has been assigned a primary key and foreign key.
+There is one table within the diagram that did not have a column with a common name to any other table. Upon review there were two tables with the same values. I duplicated the column with the matching values and gave it the same name to create the relationship in the schema. 
 The second part of this display is Data Analytics. 
 1. To identify each employee’s employee number, last name, first name, sex, and salary on one table. I used the “select” function, listed all values desired and joined tables for all information to be present in one search.
 2. To identify the employees hired in 1986, I selected the columns to be identified. I used the “where” function for the hire_date column. I then used the “between” function to pull just the employees hired in 1986.
