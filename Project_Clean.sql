@@ -96,12 +96,15 @@ from employees
 where hire_date  between '1986-01-01'
 and '1986-12-31';
 
-Select departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name
+Select departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name, titles.title_id
 from departments
 join dept_manager
 on departments.dept_no = dept_manager.dept_no
 join employees
 on employees.emp_no=dept_manager.emp_no
+join titles
+on titles.title_id = employees.title_id
+where title = 'manager'
 order by dept_name asc;
 
 select employees.last_name, employees.first_name, departments.dept_name
